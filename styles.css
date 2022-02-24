@@ -9,14 +9,11 @@
 html{
   font-family: 'Montserrat', sans-serif;
 }
-.header{
-  background: #fafafa;
 
-}
 
 .header-container {
   z-index: 1;
-  background-color: #fafafa;
+  background-color: #20a6f365;
   position: fixed;
   left: 0;
   top: 0;
@@ -32,9 +29,10 @@ html{
 }
 .header-container .header-container--logo {
   padding-left: 1em;
+  color: #fafafa;
 }
 .header-container .header-container--links {
-  font-size: 1.3rem;
+  font-size: 1em;
   font-weight: 300;
   width: 60%;
 }
@@ -51,25 +49,37 @@ html{
 .header-container a{
   cursor: pointer;
   text-decoration: none;
+  
+}
 
+.header-container a.active{
+font-weight: 600;  
 }
 
 .home--wrapper {
   /* background: #Fafafa; */
+  position: relative;
+  left: 0;
+  top: 50px;
   height: 85vh;
   width: 90%;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 1em;
+  margin-top: 4em;
 }
 
 .home--text{
   display: grid;
-  height: 100%;
+  height: 80%;
   align-content: center;
-  justify-content: center;
+  justify-content: start;
+  color: rgb(10, 10, 116);
+  align-items: start;
+  justify-items: start;
 }
 
 #aboutme {
@@ -93,7 +103,9 @@ html{
 }
 
 .me{
+  text-align: center;
   width: 80%;
+  margin: 0 auto;
 }
 
 .home--arrow{
@@ -102,21 +114,23 @@ html{
   cursor: pointer;
 }
 
-.home--wrapper span{
-  font-size: 2.5rem;
+.home--text__hi{
+  font-size: 0.5em;
   font-weight: 400;
 }
 
 .home--wrapper h1
 {
-  font-size: 6rem;
+  font-size: 5em;
   font-weight: 700;
+
 }
 
 .home--wrapper h2{
-  font-size: 3.5rem;
+  font-size: 2.5em;
   font-weight: 400;
 }
+
 
 
 
