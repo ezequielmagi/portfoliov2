@@ -27,7 +27,7 @@ html{
   justify-content: space-between;
   padding: 0 5em;
 }
-.header-container .header-container--logo {
+.header-container {
   padding-left: 1em;
   color: #fafafa;
 }
@@ -73,23 +73,77 @@ font-weight: 600;
 }
 
 .home--text{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: 80%;
   align-content: center;
-  justify-content: start;
+  justify-content: center;
   color: rgb(10, 10, 116);
-  align-items: start;
-  justify-items: start;
 }
 
-#aboutme {
-  background: steelblue;
+.aboutme {
+  position: relative;
+  left: 0;
+  height: 85vh;
+  /* background: #fafafa; */
   height: 75vh;
   width: 90%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.aboutme--wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1400px;
+}
+
+.meTeaching{
+  width: 40em;
+}
+
+.aboutme--img{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.aboutme--txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4em;
+}
+
+.aboutme--txt h2{
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  font-size: 2rem;
+}
+
+.subtitle{
+  font-size: 1rem;
+  margin-bottom: 1em;
+
+}
+
+.aboutme--txt p{
+  font-size: 18px;
+}
+
+.aboutme--fake{
+  height: 90px;
+  /* background-color: darkcyan; */
+}
+
+.aboutme--wrapper{
+  height: 100%;
+  width: 100%;
 }
 
 #skills {
@@ -102,10 +156,14 @@ font-weight: 600;
   align-items: center;
 }
 
+.home--pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .me{
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
+  width: 35em;
 }
 
 .home--arrow{
@@ -131,6 +189,10 @@ font-weight: 600;
   font-weight: 400;
 }
 
+.header-container--logo img{
+  margin: 0 3em;
+  width: 50px;
+}
 
 
 

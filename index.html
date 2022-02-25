@@ -11,7 +11,11 @@
 <body>
   <header id="header" class="header">
     <div class="header-container">
-      <div class="header-container--logo"><h1>EM</h1></div>
+      <div class="header-container--logo">
+        <picture alt="logo">
+          <img src="./assets/logo.png" alt="">
+        </picture>
+      </div>
       <nav class="header-container--links">
         <ul>
           <li> <a class="active" href="#home">HOME</a>  </li>
@@ -39,8 +43,24 @@
       </a>
     </div>
   </section>
-  <section id="aboutme">
-    <h2></h2>
+  <div id="aboutme" class="aboutme--fake"></div>
+  <section class="aboutme">
+    <div class="aboutme--wrapper">
+      <div class="aboutme--img">
+        <lottie-player class="meTeaching" src="https://assets6.lottiefiles.com/packages/lf20_z01bika0.json"  background="transparent"  speed="1"   loop  autoplay></lottie-player>
+      </div>
+      <div class="aboutme--txt">
+        <h2>Learn. Practice. Share.</h2>
+        <h3 class="subtitle">(and do it again!)</h3> 
+        <p>I love learning new technologies and creating things. Not only websites, but also tools and great user experiences.
+          On my way I discovered a talent to transmit knowledge and that, by doing so, I learned even more! because teaching is learning twice.</p>
+      </div>
+    </div>
+    <div class="home--arrow">
+      <a href="#aboutme">
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_48vyt3qj.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop autoplay></lottie-player>
+      </a>
+    </div>
   </section>
   <section id="skills"></section>
   <section id="portfolio"></section>
