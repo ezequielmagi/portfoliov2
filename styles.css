@@ -10,190 +10,172 @@ html{
   font-family: 'Montserrat', sans-serif;
 }
 
+.home{
+  height: 100vh;
+}
 
-.header-container {
-  z-index: 1;
-  background-color: #20a6f365;
-  position: fixed;
-  left: 0;
-  top: 0;
-  /* height: 85vh; */
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
+header{
+  height: 12vh;
+}
+
+.header-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
   align-items: center;
-  height: 10vh;
-  justify-content: space-between;
-  padding: 0 5em;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
-.header-container {
-  padding-left: 1em;
-  color: #fafafa;
+
+.header-container__logo{
+  display: grid;
+  align-items: center;
+  padding-left: 2em;
 }
-.header-container .header-container--links {
-  font-size: 1em;
-  font-weight: 300;
-  width: 60%;
+
+.header-container__logo img{
+  height: 9vh;
 }
-.header-container ul {
+
+.header-container__nav{
+  font-size: 1.2rem;
+  font-weight: 400;
+  grid-column-start: 3;
+}
+
+.header-container__nav ul{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  text-align: center;
   align-items: center;
+  justify-items: center;
+  padding: 0 1em;
 }
-.header-container li{
+
+.header-container__nav a{
+  color: #333;
+  text-decoration: none;
+}
+.header-container__nav a:hover{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-container__nav li{
   list-style: none;
 }
 
-.header-container a{
-  cursor: pointer;
-  text-decoration: none;
-  
+main{
+  height: 79vh;
 }
 
-.header-container a.active{
-font-weight: 600;  
-}
-
-.home--wrapper {
-  /* background: #Fafafa; */
-  position: relative;
-  left: 0;
-  top: 50px;
-  height: 85vh;
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
+.main-container, .aboutme-container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  padding: 1em;
-  margin-top: 4em;
-}
-
-.home--text{
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
   justify-content: center;
-  color: rgb(10, 10, 116);
+  margin: 0 auto;
+  width: 80%;
+
 }
 
-.aboutme {
-  position: relative;
-  left: 0;
-  height: 85vh;
-  /* background: #fafafa; */
-  height: 75vh;
-  width: 90%;
-  margin: 0 auto;
+.main-container__txt{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  height: 90%;
+  padding: 1em;
+
 }
 
-.aboutme--wrapper{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 1400px;
+.main-container__txt span{
+  font-size: 2.5rem;
 }
 
-.meTeaching{
-  width: 40em;
+.main-container__txt h1{
+  color: rgb(39, 39, 133);
+  font-size: 4em;
+}
+.main-container__txt h2{
+  color: rgb(35, 35, 168);
+  font-size: 2.5em;
+}
+
+.main-container__img{
+  height: 90%;
+  padding: 1em; 
+}
+
+.section-division{
+  display: flex;
+  justify-content: center;
+  height: 9vh;
+}
+
+.down-arrow{
+  cursor: pointer;
+}
+
+/* ABOUTME SECTION */
+
+.aboutme{
+  height: 90vh;
 }
 
 .aboutme--img{
+  margin-bottom: 8em;
+  padding: 1em;
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+.aboutme--img img{
+  height: 90%;
 }
 
 .aboutme--txt{
+  margin-top: 8em;
+  padding-top: 2em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4em;
 }
 
 .aboutme--txt h2{
-  font-weight: 700;
-  margin-bottom: 0.2em;
+  color: rebeccapurple;
+  font-size: 2.5rem;
+}
+.aboutme--txt h3{
+  color: rgb(163, 96, 231);
   font-size: 2rem;
 }
 
-.subtitle{
-  font-size: 1rem;
-  margin-bottom: 1em;
-
-}
-
 .aboutme--txt p{
-  font-size: 18px;
+  font-size: 1.3rem;
+  padding-top: 1em;
 }
 
-.aboutme--fake{
-  height: 90px;
-  /* background-color: darkcyan; */
+/*  */
+
+@media screen and (min-width: 1440px) {
+    .main-container__txt h1{
+      color: rgb(39, 39, 133);
+      font-size: 6em;
+    }
+    .main-container__txt h2{
+      color: rgb(35, 35, 168);
+      font-size: 4em;
+    }
+
+    .aboutme--txt h2{
+      color: rebeccapurple;
+      font-size: 3.5rem;
+    }
+    .aboutme--txt h3{
+      color: rgb(163, 96, 231);
+      font-size: 3rem;
+    }
+
+    .aboutme--txt p{
+      font-size: 1.8rem;
+      padding-top: 1em;
+    }
 }
-
-.aboutme--wrapper{
-  height: 100%;
-  width: 100%;
-}
-
-#skills {
-  background: Green;
-  height: 75vh;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.home--pic{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.me{
-  width: 35em;
-}
-
-.home--arrow{
-  width: 5%;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-.home--text__hi{
-  font-size: 0.5em;
-  font-weight: 400;
-}
-
-.home--wrapper h1
-{
-  font-size: 5em;
-  font-weight: 700;
-
-}
-
-.home--wrapper h2{
-  font-size: 2.5em;
-  font-weight: 400;
-}
-
-.header-container--logo img{
-  margin: 0 3em;
-  width: 50px;
-}
-
-
-
-/*# sourceMappingURL=styles.css.map */
