@@ -377,8 +377,9 @@ footer{
 }
 
 /*  */
+/*375*/
 
-@media screen and (min-width: 375px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 767px){
 
   .home{
     height: 100vh;
@@ -427,6 +428,7 @@ footer{
     .main-container__txt{
       padding: 0 1em;
       height: 100%;
+      text-align: center;
     }
 
     .main-container__img{
@@ -585,94 +587,65 @@ footer{
       /* margin: 50px auto; */
     }
 
-    .skills, .contactme, footer{
-      /* display: none; */
+    .skills{
+      height: 100vh;
+    }
+
+    .skills p{
+      font-size: 24px;
+    }
+
+    .skills-logos img{
+      width: 4em;
+    }
+
+    .contactme{
+      height: 70vh;
+    }
+
+    .contactme-container{
+      height: 100%;
+      grid-template-rows: repeat(3, 1fr);
+      width: 100%;
+    }
+
+    .contactme-container__msg h2{
+      font-size: 1.5em;
+      padding: 0 2em;
+   
+    }
+
+    .contactme-container__msg{
+      grid-row: 1;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .contactme-container__links{
+      grid-row: 2;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .contactme-container__logo{
+      grid-row: 3;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      padding-bottom: 1em;
+    }
+
+    footer{
+      height: 20vh;
+      padding: 0 1em;
     }
 
 }
 
-/* @media screen and (min-width: 376px) and(max-width: 767px){
 
-  .section-division{
-    display: none;
-  }
-
-  header{
-    height: 15vh;
-  }
-
-  .header-container{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header-container__logo{
-    margin-top: 1em;
-    padding: 0;
-  }
-  
-
-  
-  .header-container__nav{
-      grid-row: 2;
-      grid-column-start: 1;
-      font-size: 0.7rem;
-      font-weight: 400;
-      grid-column-start: 3;
-      margin-top: 1em;
-    }
-
-    .main-container{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-    }
-
-    .main-container__img{
-      /* grid-row: 1; */
-    }
-
-    /* .main-container__txt span{
-      font-size: 1.5rem;
-    }
-
-    .main-container__txt h1{
-      color: rgb(39, 39, 133);
-      font-size: 3em;
-    }
-    .main-container__txt h2{
-      color: rgb(35, 35, 168);
-      font-size: 1.5em;
-    }
-
-    .aboutme--txt{
-      margin-top: 8em;
-      padding-top: 2em;
-      padding: 1em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .aboutme--txt h2{
-      color: rebeccapurple;
-      font-size: 1.8rem;
-    }
-    .aboutme--txt h3{
-      color: rgb(163, 96, 231);
-      font-size: 1.2rem;
-    }
-
-    .aboutme--txt p{
-      font-size: 1rem;
-      padding-top: 1em;
-    } */
-
-} 
 
 @media screen and (min-width: 768px)  and (max-width: 1439px){
   .header-container__nav{
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: 400;
       grid-column-start: 3;
     }
